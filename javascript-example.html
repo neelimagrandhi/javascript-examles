@@ -1,0 +1,33 @@
+<html>
+<head>
+<body>
+<script>
+var student={
+     "id": 201,
+	 "firstname": "sai",
+	 "lastname": "sai1",
+	 "rollno": 302,
+	 "total":{
+	     "marks1": 20,
+		 "marks2": 30,
+		 "marks3":50
+		 },
+	"marks":[10,20,30,40],
+	"getname":function(){
+	return this.firstname+this.lastname
+	}
+}
+console.log(student);
+console.log(student.getname());
+//insert
+student.grade="A";
+console.log(student.grade);
+//update
+student.total.marks4=356;
+console.log(student.total);
+//delete
+delete student.rollno;
+console.log(student);
+</script>
+</body>
+</html>

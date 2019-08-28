@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+var arr=[2,3,4,5,6];
+    for(var i=2;i<=arr.length-1;i++){
+	 if((i%2===0)||(i%3==0))
+	 console.log(i);
+}
+function primr(num){
+ for(var i=2;i<num;i++){
+ if(num%i===0){
+ return false;
+ }
+ }
+ return true;
+ }
+ function display(n){
+ var arr=[2];
+ for(var i=3;i<n;i+=2){
+  if(primr(i)){
+  arr.push(i);
+  }
+  }
+  console.log(arr);
+  }
+  display(100);
+</script>
+</body>
+</html>
+	  
