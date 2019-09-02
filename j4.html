@@ -1,0 +1,35 @@
+<html>
+<body>
+<script>
+//odd number upto n
+var n=100;
+for(var i=0;i<=n;i++){
+if(i%2!=0)
+console.log(i);
+}
+//squares upto n
+var n=10;
+for(var i=0;i<=n;i++){
+console.log(i*i);
+}
+//multiples of 5 upto n
+var n=100;
+for(var i=1;i<=n;i++){
+if(i%5==0)
+console.log(i);
+}
+//prime numbers
+for(var i=1;i<=20;i++){
+c=0;
+for(var j=1;j<=i;j++){
+if(i%j==0){
+c++;
+}
+}
+if(c==2){
+console.log(i);
+}
+}
+</script>
+</body>
+</html>

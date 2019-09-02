@@ -1,0 +1,52 @@
+<html>
+<body>
+<script>
+var Employee=function(id,name,salary,dept,designation,joiningdate,insurance,accudeleaves,utilizeleaves,mobileno,deptname,balanceleaves){
+this.id=id;
+this.name=name;
+this.salary=salary;
+this.dept=dept;
+this.designation=designation;
+this.joiningdate=joiningdate;
+this.insurance=insurance;
+this.accudeleaves=accudeleaves;
+this.utilizeleaves=utilizeleaves;
+this.mobile=mobileno;;
+this.dept=deptname;
+this.balanceleaves= function(){
+ return this.accudeleaves-this.utilizeleaves;
+ }
+}
+var emp1=new Employee(10,"sindu",100000,"frontend","softwarengineer",30,20000,15,5,345678902,"cc");
+var emp2=new Employee(20,"keerthi",200000,"backend","traineeengineer",30,20000,20,5,345678902,"cc");
+var emp3=new Employee(30,"anusha",300000,"ui","softwarengineer",30,20000,30,5,345678902,"cc");
+var emp4=new Employee(40,"sailakshmi",400000,"testing","softwarengineer",30,20000,35,5,345678902,"cc");
+var emp5=new Employee(50,"bindu",500000,"database","traineeengineer",30,20000,25,5,345678902,"cc");
+var emp6=new Employee(60,"indu",600000,"Aws","traineeengineer",30,20000,45,5,345678902,"cc");
+var emp7=new Employee(70,"swara",700000,"salesforce","traineeengineer",30,20000,25,5,345678902,"cc");
+var emp8=new Employee(80,"supi",800000,"networking","softwarengineer",30,20000,5,5,345678902,"cc");
+var emp9=new Employee(90,"gayatri",900000,"testing","softwarengineer",30,20000,45,5,345678902,"cc");
+var emp10=new Employee(100,"hema",810000,"frontend","softwarengineer",30,20000,25,5,345678902,"cc");
+console.log(emp1);
+console.log(emp1.balanceleaves());
+console.log(emp2);
+console.log(emp2.balanceleaves());
+console.log(emp3);
+console.log(emp3.balanceleaves());
+console.log(emp4);
+console.log(emp4.balanceleaves());
+console.log(emp5);
+console.log(emp5.balanceleaves());
+console.log(emp6);
+console.log(emp6.balanceleaves());
+console.log(emp7);
+console.log(emp7.balanceleaves());
+console.log(emp8);
+console.log(emp8.balanceleaves());
+console.log(emp9);
+console.log(emp9.balanceleaves());
+console.log(emp10);
+console.log(emp10.balanceleaves());
+</script>
+</body>
+</html>
