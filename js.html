@@ -1,0 +1,109 @@
+<html>
+<body>
+<script>
+//sum of our numbers
+function sum(a,b,c,d){
+     return a+b+c+d
+	 }
+var sum1=sum(10,20,30,40)
+console.log(sum1)
+//multiplication o two numbers
+function mul(a,b){
+     return a*b
+	 }
+var mul1=mul(10,20)
+console.log(mul1)
+//to get even numbers
+var even=[10,31,42,68,101,1002,1003]
+function Even(){
+var even1=even.filter(function(value,index){
+     return value%2==0
+	 })
+console.log(even1)
+}
+Even()
+//to get odd numbers
+var odd=[10,31,42,68,101,1002,1003]
+function Odd(){
+var odd1=odd.filter(function(value,index){
+     return value%2!=0
+	 })
+console.log(odd1)
+}
+Odd()
+//print 
+function val(){
+          console.log("welcome to vbm infotech");
+		  }
+val()
+var arr=[{id:101,name:"sai",per:30},
+          {id:102,name:"ram",per:20},
+		   {id:103,name:"jyo",per:10},
+		   {id:104,name:"teja",per:60},
+		   {id:105,name:"swa",per:70},
+		   {id:106,name:"uha",per:80},
+		   {id:107,name:"santhi",per:75},
+		   {id:108,name:"sindhu",per:80},
+		   {id:109,name:"ali",per:40},
+		   {id:110	,name:"sai",per:30}]
+function arr1(){
+var x=arr.map(function(value,index){
+      return {
+	      id: value.id,
+		  name: value.name
+		  }
+		  })
+	  console.log(x);
+	  }
+	  arr1()
+var ar=[{id:101,name:"sai",per:30},
+          {id:102,name:"ram",per:20},
+		   {id:103,name:"jyo",per:10},
+		   {id:104,name:"teja",per:60},
+		   {id:105,name:"swa",per:70},
+		   {id:106,name:"uha",per:80},
+		   {id:107,name:"santhi",per:75},
+		   {id:108,name:"sindhu",per:80},
+		   {id:109,name:"ali",per:40},
+		   {id:110	,name:"sai",per:30}]
+function arr3(){
+var y=ar.every(function(value,index){
+      return value.per>=35
+	  })
+	console.log(y)
+	}
+	arr3()
+var ar=[{id:101,name:"sai",per:30},
+          {id:102,name:"ram",per:20},
+		   {id:103,name:"jyo",per:10},
+		   {id:104,name:"teja",per:60},
+		   {id:105,name:"swa",per:70},
+		   {id:106,name:"uha",per:80},
+		   {id:107,name:"santhi",per:75},
+		   {id:108,name:"sindhu",per:80},
+		   {id:109,name:"ali",per:40},
+		   {id:110	,name:"sai",per:30}]
+function a(){
+var z=ar.map(function(value,index){
+      if(value.per>=35){
+	  return value.name
+	  }
+	  })
+	  console.log(z);
+	  }
+	a()
+function failed(){
+var fail=ar.map(function(value,index){
+      if(value.per<=35){
+	  return value.name
+	  }
+	  })
+	  console.log(fail);
+	  }
+	failed()
+</script>
+</body>
+</html>
+
+
+ 
