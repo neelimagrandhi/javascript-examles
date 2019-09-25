@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function person(name,age){
+    this.name="sai";
+	this.age=12;
+	}
+function doctor(salary,dept){
+    this.salary=10000;
+	this.dept="cse";
+}
+doctor.prototype=new person()
+var doc=new doctor()
+console.log(doc)
+</script>
+</body>
+</html>
