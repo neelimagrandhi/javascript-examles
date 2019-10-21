@@ -1,0 +1,73 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var array=[12,13,14,15,16]
+for(var i=0;i<=array.length-1;i++){
+console.log(array[i])
+}
+//push
+array.push(104);
+array.push(105);
+array.push(106);
+array.push(107);
+console.log(array);
+//pop
+array.pop();
+console.log(array);
+//shift
+array.shift();
+console.log(array);
+//unshift
+array.unshift(10);
+console.log(array);
+//splice
+array.splice(1,2);
+console.log(array);
+//slice
+var array1=array.slice()
+console.log(array1);
+//join
+var array2=array.join("&");
+console.log(array2);
+//indexof
+var array3=array.indexOf(16,0);
+console.log(array3);
+//fill
+array.fill(10);
+console.log(array);
+//concat
+var a=array.concat(array1);
+console.log(a);
+//tostring
+var b=array.toString();
+console.log(b);
+//filter
+var arr=[10,20,13,40,51,80,90]
+arr.filter(function(value,index){
+if(value%2==0){
+console.log(value);
+}
+})
+//foreach
+var arr=[10,20,13,40,51,80,90]
+arr.forEach(function(value,index){
+console.log(value);
+})
+//every
+var arr=[10,20,13,40,51,80,90]
+var b=arr.every(function(value,index){
+return value%2==0
+})
+console.log(b);
+//some
+var arr=[10,20,13,40,51,80,90]
+var b=arr.some(function(value,index){
+return value%2==0
+})
+console.log(b);
+
+</script>
+</body>
+</html>
